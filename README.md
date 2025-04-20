@@ -89,6 +89,6 @@ To optimize the JavaScript file for production, follow these steps:
    npm install
    ```
 2. **Run the Build Script**:
-  ```bash
-  npm run build
-  ``` 
+   ```bash
+   npm run build
+   ``` 
