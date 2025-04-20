@@ -8,6 +8,7 @@ This plugin resolves focus management issues for internal links to improve acces
 - **Enhanced Accessibility**: Ensures users are moved directly to the intended section without disruptions or resets to the top of the page.
 - **Assistive Technology Compatibility**: Enhances user experiences for Windows Screen Magnifier, JAWS, and iOS VoiceOver. 
 - **Lightweight Integration**: Works effortlessly with your WordPress site without requiring extensive configuration.
+- **Customization Option**: Applies a class to the focused element, enabling tailored styling.
 
 ## How It Works
 
@@ -16,7 +17,7 @@ This plugin resolves focus management issues for internal links to improve acces
      - The target content receives the attribute `tabindex="-1"`.
      - The target content is also assigned the class `accessible-links-focused`.
 
-2. **On Focus Loss**:
+2. **On Blur**:
    - When focus leaves the target content:
      - The `tabindex="-1"` attribute is removed.
      - The `accessible-links-focused` class is also removed.
