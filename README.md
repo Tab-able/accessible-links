@@ -1,7 +1,7 @@
 # Accessible Links from Tab-able
 
 ## Overview
-This plugin resolves focus management issues for internal links to improve accessibility for all users, particularly individuals relying on assistive technologies like screen readers.
+This plugin resolves <a href="https://codepen.io/Tab-able/full/dPPPONR">focus management issues</a> for internal links to improve accessibility for all users, particularly individuals relying on assistive technologies like screen readers.
 
 ### Features:
 - **Automatic Focus Management**: Seamlessly adds the `tabindex` attribute with a value of `-1` to non-interactive elements targeted by internal links.
