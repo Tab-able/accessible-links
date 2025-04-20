@@ -28,10 +28,67 @@ This plugin resolves focus management issues for internal links to improve acces
      - Steps 1 and 2 are then applied, ensuring the intended focus management is performed.
 
 ---
+## Installation Guide for Non-npm Users
 
-## Installation Guide
-1. Clone or download the repository
+If you are not using npm and would like to embed the JavaScript file directly into your HTML, follow these steps:
+
+### 1. Download the File
+Download the minified JavaScript file (`script.min.js`) from the `/dist` folder.
+
+### 2. Embed the Script
+Add the following `<script>` tag to your HTML file to include the JavaScript file:
+```html
+<script src="path-to/accessible-links.min.js"></script>
+```
+### 3. Automatic Functionality
+Once the script is embedded, the following features are automatically activated:
+- Focus on Page Load: If the URL contains a hash (e.g., `#section1`), the corresponding element with the matching ID will gain focus when the page loads.
+- Focus on Browser Navigation: When navigating browser history using the back/forward buttons, the script ensures focus is reapplied to the appropriate element.
+
+You don’t need to manually call any functions or add event listeners—they are already included in the script.
+Example usage:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Links Example</title>
+</head>
+<body>
+    <a href="#section1">Go to Section 1</a>
+    <div id="section1">Section 1 Content</div>
+
+    <!-- Place your script at the end of the DOM -->
+    <script src="script.min.js"></script>
+</body>
+</html>
+```
+
+## Installation Guide for Node.js
+
+1. Install the package using:
    ```bash
-   git clone https://github.com/Tab-able/accessible-links.git
+   npm install accessible-links
    ```
-2. Load the JS into each page of your website.
+2. Import and use it in your Node.js project. 
+   Example usage:
+   ```bash
+   const { onPageLoad, onPopState } = require('accessible-links');
+
+   // Set up event listeners to handle focus management
+   window.addEventListener('load', onPageLoad); // Ensures focus is handled when the page loads with a hash fragment
+   window.addEventListener('popstate', onPopState); // Reapplies focus when navigating browser history
+   ```
+
+## Execute The Build
+To optimize the JavaScript file for production, follow these steps:
+
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+2. **Run the Build Script**:
+  ```bash
+  npm run build
+  ``` 

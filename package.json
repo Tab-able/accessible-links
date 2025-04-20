@@ -1,0 +1,32 @@
+{
+  "name": "@tabable/accessible-links",
+  "version": "1.0.0",
+  "description": "Resolves focus management issues for internal links to improve accessibility for all users, particularly individuals relying on assistive technologies like screen readers.",
+  "main": "dist/accessible-links.transpiled.js",
+  "scripts": {
+    "build": "babel src/accessible-links.js -o dist/accessible-links.transpiled.js && terser dist/accessible-links.transpiled.js -o dist/accessible-links.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tab-able/accessible-links.git"
+  },
+  "keywords": [
+    "accessibility",
+    "links",
+    "focus",
+    "screenreader",
+    "magnifier"
+  ],
+  "author": "anevins25",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tab-able/accessible-links/issues"
+  },
+  "homepage": "https://github.com/Tab-able/accessible-links#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.27.0",
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "terser": "^5.39.0"
+  }
+}

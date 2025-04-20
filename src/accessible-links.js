@@ -81,3 +81,5 @@ function onPopState() {
 // Attach event listeners to handle focus on page load and browser navigation
 window.addEventListener('load', onPageLoad); // Trigger on page load
 window.addEventListener('popstate', onPopState); // Trigger on browser history navigation
+
+export { applyFocus, removeFocus, handleFocusOnAnchor, onPageLoad, onPopState };
