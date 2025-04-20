@@ -7,7 +7,7 @@ This plugin resolves <a href="https://codepen.io/Tab-able/full/dPPPONR">focus ma
 - **Automatic Focus Management**: Seamlessly adds the `tabindex` attribute with a value of `-1` to non-interactive elements targeted by internal links.
 - **Enhanced Accessibility**: Ensures users are moved directly to the intended section without disruptions or resets to the top of the page.
 - **Assistive Technology Compatibility**: Enhances user experiences for Windows Screen Magnifier, JAWS, and iOS VoiceOver. 
-- **Lightweight Integration**: Works effortlessly with your WordPress site without requiring extensive configuration.
+- **Lightweight Integration**: Works effortlessly with your site without requiring extensive configuration.
 - **Customization Option**: Applies a class to the focused element, enabling tailored styling.
 
 ## How It Works
