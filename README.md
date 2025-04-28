@@ -1,4 +1,5 @@
 # Accessible Links from Tab-able
+Looking for the node package [@tabable/accessible-links](https://www.npmjs.com/package/@tabable/accessible-links)?
 
 ## Overview
 This plugin resolves <a href="https://codepen.io/Tab-able/full/dPPPONR">focus management issues</a> for internal links to improve accessibility for all users, particularly individuals relying on assistive technologies like screen readers.
